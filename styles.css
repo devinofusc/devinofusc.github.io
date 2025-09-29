@@ -1,12 +1,8 @@
 body {
-background: slategray;
+background: rgb(102, 172, 241);
 font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
 color: white;
 text-align: center;
-}
-b1 {
-    color: white;
-    text-align: left; 
 }
