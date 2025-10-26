@@ -6,3 +6,11 @@ h1 {
 color: rgb(11, 11, 11);
 text-align: center;
 }
+.projects { display:flex; flex-wrap:wrap; } /* condensed to save space */
+.project {
+width: 30%;
+margin: 10px;
+padding: 20px 10px;
+background: rgba(215, 16, 16, 0.475); /* pick a color */
+border-radius: 25%;
+}
