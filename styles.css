@@ -1,19 +1,47 @@
-/* Page Title */
+/* Page Background */
+body {
+    background-color: #000000; /* Black */
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+/* Main Title */
 h1 {
     text-align: center;
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 20px 0;
+    padding: 25px 0;
+    font-size: 32px;
+    font-weight: bold;
 }
 
-/* Page Background */
-body {
-    background-color: #000000; /* Black background */
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+/* Section Headers */
+section h2 {
+    color: #FFDDAE; /* Soft gold */
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-/* Projects Grid */
+/* ABOUT / SKILLS Formatting */
+.about-section, .skills-section {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #73000A; /* Garnet */
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.about-section p, .skills-section p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* PROJECT GRID */
 .projects {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columns */
@@ -21,25 +49,24 @@ body {
     padding: 40px;
 }
 
-/* Individual Card */
+/* Individual Project Card */
 .project {
     background-color: #73000A; /* Garnet */
-    padding: 25px;
+    padding: 20px;
     border-radius: 20px;
     text-align: center;
-    color: #ffffff;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 
-/* Card Titles */
+/* Project Title */
 .project h2 {
+    color: #FFDDAE;
     margin-bottom: 15px;
-    color: #FFDDAE; /* Gold-ish tone for contrast (optional) */
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
 }
 
-/* Images inside cards */
+/* Project Images */
 .project img {
     width: 80%;
     max-height: 260px;
@@ -49,19 +76,20 @@ body {
     margin-bottom: 15px;
 }
 
-/* Paragraph text */
+/* Project Descriptions */
 .project p {
+    color: #ffffff;
     font-size: 15px;
     line-height: 1.4em;
-    color: #ffffff;
 }
 
-/* Link Styling */
+/* Remove blue link underline */
 a {
-    color: inherit;
     text-decoration: none;
+    color: inherit;
 }
 
+/* Image Hover Effect */
 a:hover img {
     opacity: 0.8;
     transition: 0.2s;
