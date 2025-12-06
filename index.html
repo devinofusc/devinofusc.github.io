@@ -2,12 +2,62 @@
 <html>
 <head>
     <title>CSCE 190: Devin Dwight</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
-        /* Shrink specific image */
-        .small-img {
-            width: 200px; /* adjust size as needed */
-            height: auto;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f5f4;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            color: #73000A; /* USC Garnet */
+        }
+        a {
+            color: #73000A;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .about, .experience, .projects, .section, .contact {
+            background: #ffffff;
+            border-left: 6px solid #73000A;
+            margin: 20px auto;
+            padding: 20px;
+            width: 85%;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+        .project-card, .project {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            background: #fafafa;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .project-card:hover, .project:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            border-bottom: 3px solid #73000A;
+            width: fit-content;
+            margin-bottom: 10px;
+        }
+        .contact {
+            font-weight: bold;
+            background: #73000A;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        img {
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -20,8 +70,8 @@
     <div class="about">
         <h2>About Me</h2>
         <p>I strive to achieve a management role in a start-up programming company 
-        to achieve the reward of successful and self-fulfillment. My home life is very southern and relaxing
-        I have few neighbors but I enjoy living off the land in a small town.</p>
+        to achieve the reward of successful and self-fulfillment. My home life is very southern and relaxing;
+        I have few neighbors, but I enjoy living off the land in a small town.</p>
     </div>
 
     <!-- SKILLS -->
@@ -40,7 +90,7 @@
                 <h3>Problem Statement</h3>
                 <img src="csce image/Screenshot 2025-10-13 204207.png" alt="Problem Statement">
             </a>
-            <p>College students struggle to effectively manage their time and schedule leading to accidental due date mishaps.</p>
+            <p>College students struggle to effectively manage their time and schedule, leading to accidental due-date mishaps.</p>
         </section>
 
         <!-- 2 — Affinity Diagram -->
@@ -67,9 +117,9 @@
                 <h3>Algorithmic Design Ship Project</h3>
             </a>
             <a href="https://github.com/devinofusc/codesamples">
-                <img src="csce image/Screenshot 2025-12-05 213332.png" style="width:150px; height:auto;">
+                <img src="csce image/Screenshot 2025-12-05 213332.png" class="small-img">
             </a>
-            <p>This Repo contains the code for a Cargo ship organizer.</p>
+            <p>This repo contains the code for a Cargo Ship organizer.</p>
         </section>
     </div>
 
@@ -79,7 +129,7 @@
             <ul>
                 <li>Design Tools: Canva, Photoshop, CapCut</li>
                 <li>Web Design: HTML, CSS</li>
-                <li>Soft Skills: Creativity, Communication, Team Leadership </li>
+                <li>Soft Skills: Creativity, Communication, Team Leadership</li>
             </ul>
         </div>
     </div>
